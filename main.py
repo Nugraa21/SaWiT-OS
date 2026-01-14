@@ -10,42 +10,45 @@ def clear():
 
 def menu():
     print(Fore.CYAN + "1. System Info")
-    print(Fore.CYAN + "2. Write Log")
-    print(Fore.CYAN + "3. View Logs")
-    print(Fore.CYAN + "4. About App")
-    print(Fore.RED  + "0. Exit")
+    print(Fore.CYAN + "2. Write Experiment Log")
+    print(Fore.CYAN + "3. View Lab Logs")
+    print(Fore.CYAN + "4. About Nugra21 Lab")
+    print(Fore.RED  + "0. Exit Lab")
 
 def system_info():
-    print(Fore.GREEN + "\nSystem Information")
-    print("-" * 25)
+    print(Fore.GREEN + "\n🖥 System Information")
+    print("-" * 30)
     print(f"OS      : {os.name}")
     print(f"User    : {os.getenv('USERNAME') or os.getenv('USER')}")
     print(f"Path    : {os.getcwd()}")
-    log_activity("Viewed system information")
+    log_activity("Checked system information")
 
 def write_log():
-    msg = input("Enter log message: ")
+    msg = input("Write your experiment note: ")
     log_activity(msg)
-    print(Fore.YELLOW + "Log saved successfully.")
+    print(Fore.YELLOW + "✔ Log saved to Nugra21 Lab.")
 
 def view_logs():
-    print(Fore.MAGENTA + "\nActivity Logs\n")
+    print(Fore.MAGENTA + "\n📜 Nugra21 Lab Logs\n")
     try:
         with open("data/logs.txt", "r") as file:
             print(file.read())
     except FileNotFoundError:
-        print("No logs found.")
+        print("No lab logs found.")
 
 def about():
     print(Fore.BLUE + """
-Python Developer Lab
+🧪 Nugra21 Lab
 Version : 1.0.0
-Author  : Open Source Learner
+Author  : Nugra21
 
-A simple but powerful terminal-based Python project.
+A free experimental Python lab.
+No rules. No pressure.
+Just build, test, break, and learn.
 """)
 
 def main():
+    log_activity("Lab session started")
     while True:
         clear()
         show_banner()
@@ -61,11 +64,11 @@ def main():
         elif choice == "4":
             about()
         elif choice == "0":
-            log_activity("Exited application")
-            print("Goodbye!")
+            log_activity("Exited Nugra21 Lab")
+            print("👋 Leaving Nugra21 Lab. See you!")
             break
         else:
-            print("Invalid option!")
+            print("❌ Invalid option!")
 
         pause()
 
