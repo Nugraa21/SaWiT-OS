@@ -1,0 +1,12 @@
+{
+  "/": {
+    "home": {
+      "shared": {
+        "motivasi.txt": "Sawit: Hijau, Kuat, Masa Depan."
+      }
+    },
+    "bin": {
+      "help.txt": "Bantuan SaWiT OS"
+    }
+  }
+}

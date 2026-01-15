@@ -6,7 +6,11 @@
         "projects": {
           "sawit.py": "# Contoh skrip sawit\nprint('Halo Sawit!')"
         },
-        "data.txt": "\ntest aja sih heheh "
+        "data.txt": "\ntest aja sih heheh ",
+        "lahanrakyat": {
+          "sawit.js": "sawit itu adalah tanaman yang menghasilkan uang"
+        },
+        "sawit.js": "sawit adalah tanaman penghasil uang "
       },
       "shared": {
         "motivasi.txt": "Sawit: Hijau, Kuat, Masa Depan."

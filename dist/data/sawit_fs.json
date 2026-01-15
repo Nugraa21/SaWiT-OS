@@ -1,0 +1,15 @@
+{
+  "/": {
+    "home": {
+      "shared": {
+        "motivasi.txt": "Sawit: Hijau, Kuat, Masa Depan."
+      },
+      "tanah": {
+        "sawit.txt": "sawit adalah pohon\n:selesai"
+      }
+    },
+    "bin": {
+      "help.txt": "Bantuan SaWiT OS"
+    }
+  }
+}

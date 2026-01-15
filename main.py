@@ -130,7 +130,7 @@ DEFAULT_FS = {
     "/": {
         "home": {
             "nugra": {
-                "readme.txt": "Selamat datang di Nugra21.SaWiT-OS.\nTanam kode, panen keterampilan.",
+                "readme.md": "Selamat datang di Nugra21.SaWiT-OS.\nTanam kode, panen keterampilan.",
                 "projects": {
                     "sawit.py": "# Contoh skrip sawit\nprint('Halo Sawit!')"
                 }
